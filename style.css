@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;;
+    outline: none;
+}
+
+body{
+    background-image: url(https://usagif.com/wp-content/uploads/gifs/raining-money-10.gif);
+
+    background-size: cover;
+    background-repeat: no-repeat;}
+.logo{
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+main {
+    width: 375px;
+    background: #0fd662;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px ;
+}
+label {
+    color: rgba(187, 187, 187, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+select, input {
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 30px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+    
+}
+
+select:hover, input:hover {
+    border: 3px solid #772fd3;
+    box-shadow: 0 0 5px rgba(119, 47, 211, 0.5);
+    transition: all 0.3s ease;;
+}
+
+input {
+    width: 95%;
+}
+button {
+    background: #772fd3;
+    border-radius: 30px;
+    width: 100%;
+    border: none;  
+    height: 48px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+     transition: all 0.8s ease;
+}
+button:hover {
+    opacity: 0.8;
+    background-color: #ffffff;
+    color: #772fd3;
+}
+button:active {
+    opacity: 0.6;
+    background-color: #fa0707;
+}
+section {
+    border: 1px solid #fefdff;
+    border-radius: 20px;
+    margin-top: 35px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.arrow-img {
+    margin: 15px 0;
+}
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.currency {
+    color: #777777;
+    font-size: 14px;
+}
+.currency-value, .currency-value-to-convert{
+    color: #555555;
+    font-size: 20px;
+    font-weight: 700;
+}
+section {
+    background-color: #ffffff;
+}
+
+@media (max-width: 850px) {
+    body{
+        width: 100vw;
+        height: 20vh;
+    }
+    main {
+        width: 95vw;
+        padding: 32px 8px 16px;
+    }
+    .logo {
+        width: 70vw;
+        max-width: 220px;
+        margin: 16px auto;
+    }
+    select, input, button {
+        font-size: 15px;
+        height: 42px;
+        padding-left: 12px;
+    }
+    input {
+        width: 96%;
+    }
+    section {
+        padding: 8px;
+        margin-top: 24px;
+    }
+}
