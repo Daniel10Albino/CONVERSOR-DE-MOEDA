@@ -86,7 +86,7 @@ function convertValues() {
             currency: "USD",
             placeholder: "Digite o valor em dólar",
         
-        }).format(inputCurrencyValue)
+        }).format(inputCurrencyValue/dolarToday)
         
     }
     if (currencySelectTo.value === "euro") {
@@ -101,7 +101,7 @@ function convertValues() {
             style: "currency",
             currency: "BRL",
         
-        }).format(inputCurrencyValue )
+        }).format(inputCurrencyValue/ realToday)
     }
     if (currencySelectTo.value === "libra") {
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("en-GB", {
